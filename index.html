@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WenJun Luo</title>
+    <link rel="stylesheet" href="style.css"> <!-- 引用 CSS 文件 -->
+    <link href="https://fonts.googleapis.com/css?family=Caveat|Open+Sans:400,700" rel="stylesheet">
+    <script src="script.js" defer></script> <!-- 引用 JavaScript 文件 -->
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="#about" data-en="About" data-cn="关于">About</a>
+            <a href="#self-introduction" data-en="Self Introduction" data-cn="自我介绍">Self Introduction</a>
+            <a href="#contact" data-en="Contact" data-cn="联系方式">Contact</a>
+            <!-- 翻译按钮，样式和Download PDF相同 -->
+            <button id="translate-btn" class="translate-btn" data-en="CHINESE" data-cn=" 英文 ">CHINESE</button>
+        </nav>
+
+        <!-- 包含个人信息内容的区域 -->
+        <div class="content_wrap">
+            <img class="profile-img" src="assets\photo.jpg" alt="profile-photo">
+            <div class="col-wide">
+                <h1 data-en="WenJun Luo" data-cn="罗文俊">WenJun Luo</h1>
+                <h2 data-en="Undergraduate student at CQUPT" data-cn="重庆邮电大学本科生">Undergraduate student at CQUPT</h2>
+                <p data-en="Love computer vision research" data-cn="热 爱 计 算 机 视 觉 研 究">Love computer vision research</p>
+            </div>
+            <!-- Download PDF 按钮 -->
+            <a href="assets/resume.pdf" class="download-btn" download data-en="Download PDF" data-cn="下载 PDF">Download PDF</a>
+        </div>
+    </header>
+
+    <main>
+        <section id="self-introduction" class="self-introduction">
+            <div class="self-wrapper">
+                <h2 data-en="Self Introduction" data-cn="自我介绍">Self Introduction</h2>
+                <div class="information">
+                    <div>
+                        <!-- 大字号的部分 -->
+                        <h3 class="title-large" data-en="College Student | CQUPT" data-cn="重庆邮电大学 | 本科生">College Student | CQUPT</h3>
+                        <!-- 稍小的部分 -->
+                        <p class="title-medium" data-en="Software Engineering Major" data-cn="软件工程专业">Software Engineering Major</p>
+                        <p class="title-medium" data-en="Class of 2022" data-cn="2022届">Class of 2022</p>
+                    </div>
+                    <div class="description">
+                        <p data-en="I am currently studying at Chongqing University of Posts and Telecommunications, the birthplace of 3G chips." data-cn="我目前就读于重庆邮电大学，这里是3G芯片的诞生地。">I am currently studying at Chongqing University of Posts and Telecommunications, the birthplace of 3G chips.</p>
+                        <p data-en="Love and specialize in computer vision-related research." data-cn="我热爱并专注于计算机视觉相关研究。">Love and specialize in computer vision-related research.</p>
+                        <p data-en="Anyone is welcome to study and communicate with me." data-cn="欢迎任何人与我一起学习与交流。">Anyone is welcome to study and communicate with me.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Contact Section -->
+    <footer class="contact">
+        <h2 data-en="Let's keep in touch!" data-cn="联系方式！">Let's keep in touch!</h2>
+        <div class="social-icons">
+            <a href="https://github.com/Ln3214" target="_blank">
+                <img src="assets\github.png" alt="GitHub" class="icon">
+            </a>
+        </div>
+    </footer>
+
+</body>
+</html>

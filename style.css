@@ -1,0 +1,236 @@
+body {
+    font-family: "Open Sans", sans-serif;
+    margin: 0;
+}
+
+h1, h2 {
+    font-family: 'Caveat', cursive;
+    font-weight: 400;
+}
+
+h1 {
+    font-size: 80px;
+}
+
+h2 {
+    font-size: 40px;
+    margin-top: 0;
+}
+
+p {
+    font-size: 20px;
+    color: #EDF2F4;
+}
+
+/* 导航栏样式 */
+nav {
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    background-color: white;
+    top: 0;
+    z-index: 100;
+}
+
+nav a {
+    display: inline-block;
+    margin: 5px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 11px;
+    text-transform: uppercase;
+    color: #2b2b2b;
+}
+
+@media (min-width: 935px) {
+    nav a {
+        margin: 14px;
+        font-size: 16px;
+    }
+}
+
+/* 翻译按钮样式 */
+.translate-btn {
+    display: inline-block;
+    background-color: #2B2D42; /* 背景 */
+    color: #ffffff;
+    padding: 10px 20px;
+    font-size: 20px;
+    font-weight: 700;
+    border-radius: 5px;
+    text-decoration: none;
+    position: absolute;
+    top: 10px; /* 左上角 */
+    left: 10px; /* 左上角 */
+    border: none;
+    cursor: pointer;
+}
+
+.translate-btn:hover {
+    background-color: #13141d; /* 鼠标悬停时的更深红色 */
+}
+
+/* 头部样式，包含背景色和文字颜色 */
+header {
+    position: relative;
+    padding-top: 50px;
+    text-align: center;
+    background-color: #2B2D42;
+    color: #8D99AE;
+    z-index: 10;
+}
+
+header h1, header h2 {
+    color: #EDF2F4;
+}
+
+h1 {
+    margin: 0;
+}
+
+/* 内容布局样式 */
+.content_wrap {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 auto;
+    padding: 60px 50px;
+    max-width: 950px;
+    overflow: hidden;
+    position: relative;
+}
+
+@media (min-width: 935px) {
+    .content_wrap {
+        flex-direction: row;
+    }
+
+    .col-wide {
+        margin-left: 140px;
+    }
+}
+
+/* 头像样式 */
+.profile-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+@media (min-width: 440px) {
+    .profile-img {
+        width: 200px;
+        height: 200px;
+    }
+}
+
+@media (min-width: 935px) {
+    .profile-img {
+        width: 250px;
+        height: 250px;
+    }
+}
+
+/* Download PDF按钮样式 */
+.download-btn {
+    display: inline-block;
+    background-color: #E63946;
+    color: #ffffff;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: 700;
+    border-radius: 5px;
+    text-decoration: none;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+}
+
+.download-btn:hover {
+    background-color: #D62828;
+}
+
+/* Self-introduction部分 */
+.self-introduction {
+    padding-top: 30px;
+    background-color: #EDF2F4;
+    color: #2B2D42;
+}
+
+.self-wrapper {
+    margin: 0 auto;
+    padding: 30px;
+    max-width: 950px;
+}
+
+.information {
+    display: block;
+    padding-bottom: 30px;
+}
+
+/* 大字号标题 */
+.title-large {
+    font-size: 20px;
+    font-weight: 700;
+    color: #2B2D42;
+    margin-bottom: 10px;
+}
+
+/* 中等字号标题 */
+.title-medium {
+    font-size: 15px;
+    font-weight: 500;
+    color: #4A4A4A;
+    margin-bottom: 5px;
+}
+
+.description p {
+    margin-top: 10px;
+    line-height: 1.6;
+    color: #4A4A4A;
+}
+
+@media(min-width: 935px) {
+    .information {
+        display: grid;
+        grid-template-columns: 1fr 2.5fr;
+        column-gap: 30px;
+    }
+}
+
+/* Contact Section */
+.contact {
+    background-color: #2B2D42; /* 深色背景 */
+    color: #EDF2F4;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.contact h2 {
+    font-family: 'Caveat', cursive;
+    font-size: 36px;
+    font-weight: 400;
+    margin-bottom: 30px;
+    color: #EDF2F4;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 40px; /* 图标之间的间距 */
+}
+
+.social-icons a {
+    text-decoration: none;
+}
+
+.social-icons .icon {
+    width: 50px; /* 图标大小 */
+    height: 50px;
+    border-radius: 50%;
+    transition: transform 0.3s;
+}
+
+.social-icons .icon:hover {
+    transform: scale(1.1); /* 放大效果 */
+}
